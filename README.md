@@ -45,3 +45,28 @@ To install a fresh Angular app, we will used the pre-installed `angular-cli` too
     ```
 
 5. From there, you should be able to open your freshly installed Angular app by opening `http://localhost:8080` in your browser.
+
+## Run your Angular App
+
+If you already have an angular app installed in this project's `app` directory, then all you need to do is run your app. You can do this using the following steps.
+
+1. Make sure you have your project container running by calling the following terminal script in the root project directory.
+
+   ```
+   docker compose up
+   ```
+
+2. Once your project conainer is running, you need to enter the running container with the following script.
+
+    ```
+    docker compose exec web bash -l
+    ```
+
+3. Once you have entered the running container, enter the project directory and start angular with the following scripts.
+
+   ```
+   cd <my-app-name>
+   ng serve
+   ```
+
+4. Once Angular CLI has started the Angular app, you should be able to pull your angular project up in the browser via `http://localhost:8080`.
