@@ -5,8 +5,14 @@ server {
   server_name  localhost;
   
   location / {
-    root /user/share/nginx/html;
-    try_files $uri $uri/ /index.html =404;
+    # NOTE: Documentation for this location block config which proxy passes the 
+    #       location settings to Angular's internal "ng serve" server that runs.
+    #
+    # DOC: https://betterprogramming.pub/how-to-properly-get-angular-and-nginx-working-together-for-development-3e5d158734bf
+    proxy_pass http://localhost:4200;
+    proxy_set_header Upgrade    $http_upgrade;
+    proxy_set_header Connection $http_connection;
+    proxy_set_header Host $host;
   }
 
   # access_log  /var/log/nginx/host.access.log  main;
