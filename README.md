@@ -3,6 +3,18 @@
 This is a base starter docker configuration for an NGINX + Angular environment for simple
 training projects.
 
+## Index
+* [Tools](#tools)
+* [Install Angular App](#install-angular-app)
+
+## Tools
+These are the tools that are installed manually into the nginx image via the Dockerfile.
+
+* **Nginx** - The base server we are using within the docker container. We always install the latest version of Nginx via the official Docker distro via DockerHub.
+* **Node JS** - Node package manager we use to install Angular CLI with.
+* **Angular CLI** - The "command line interface" we use to install a fresh install of Angular into this project's app directory documented below.
+
+
 ## Install Angular App
 To install a fresh Angular app, we will used the pre-installed `angular-cli` tool within the web container.
 
