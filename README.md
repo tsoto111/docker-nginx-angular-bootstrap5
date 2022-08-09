@@ -66,7 +66,8 @@ If you already have an angular app installed in this project's `app` directory, 
 
    ```
    cd <my-app-name>
-   ng serve
+   ng serve --poll 2000
    ```
+   **Note:** Documentation over the `--poll` flag can be found in the following StackOverflow post "[What is the function of --poll flag in CLI](https://stackoverflow.com/questions/51930195/what-is-the-function-of-poll-flag-in-cli#answer-51930293)."
 
 4. Once Angular CLI has started the Angular app, you should be able to pull your angular project up in the browser via `http://localhost:8080`.
