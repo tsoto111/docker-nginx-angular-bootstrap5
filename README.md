@@ -41,7 +41,7 @@ To install a fresh Angular app, we will used the pre-installed `angular-cli` too
 4. After you have installed the Angular project and filled out all of the script's prompts, you should be able to start serving your angular app within the container by running:
 
     ```
-    ng serve
+    ng serve --poll 2000
     ```
 
 5. From there, you should be able to open your freshly installed Angular app by opening `http://localhost:8080` in your browser.
