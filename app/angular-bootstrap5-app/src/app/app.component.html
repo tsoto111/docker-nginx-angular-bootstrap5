@@ -1,4 +1,4 @@
-<div class="container-xl">
+<div class="container-xl py-5">
   <app-game-control (gameCounterDelegate)="gameStartedEvent($event)"></app-game-control>
   <ul class="list-group">
     <li *ngFor="let countItem of countList" class="list-group-item" [ngClass]="countItem.type">
