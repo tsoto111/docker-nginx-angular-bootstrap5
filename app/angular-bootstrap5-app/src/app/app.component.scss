@@ -1,0 +1,9 @@
+@import '../assets/common/variables';
+
+li.list-group-item {
+  text-transform: capitalize;
+
+  &.odd {
+    background-color: $gray-400;
+  }
+}

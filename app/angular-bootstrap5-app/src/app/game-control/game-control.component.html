@@ -1,0 +1,8 @@
+<h1 class="pb-4">Odd & Even Game</h1>
+<div class="d-flex align-items-center">
+  <h3 class="me-3">Timer <i class="bi bi-stopwatch"></i>: {{ gameTimerCounter }} sec</h3>
+  <button class="btn btn-success me-3" (click)="startGame()" [disabled]="startControlDisabled">Start</button>
+  <button class="btn btn-danger" (click)="stopGame()" [disabled]="stopControlDisabled">Stop</button>
+</div>
+<hr/>
+
